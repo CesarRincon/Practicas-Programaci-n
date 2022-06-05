@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    box-shadow: 4px 4px 8px 4px red;
+    animation: neon 3s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes neon {
+    50% {
+        box-shadow: 4px 4px 8px 4px blue;
+        border: 1px solid blue;
+    }
+    75% {
+        box-shadow: 4px 4px 8px 4px green;
+        border: 1px solid blue;
+    }
+}
+
+.content-2 {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    animation: neon2 3s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes neon2 {
+    25%{
+        box-shadow: 4px 0px 0px rgb(255, 217, 0);
+    }
+
+    50% {
+        box-shadow: 0px 4px 0px rgb(255, 83, 3);
+    }
+
+    75% {
+        box-shadow: -4px 0px 0px rgb(255, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0px -4px 0px 0px rgb(4, 8, 253);
+    }
+}
+
+.container {
+    width: 50rem;
+    padding: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    
+    
+}
+.container h1 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 50%;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    height: 20px;
+    border-radius: 8px;
+    border-bottom: 4px solid red;
+    animation: neonborder 3s ease infinite;
+}
+
+@keyframes neonborder {
+
+    25% {
+        border-bottom: 4px solid rgb(255, 102, 0);
+    }
+    50% {
+        border-bottom: 4px solid blue;
+    }
+    75% {
+        border-bottom: 4px solid green;
+    }
+}
+h1{
+    font-family: 'GAME';
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: 'GAME';
+    src: url(fonts/GAME_glm.ttf) format('truetype');;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item label {
+    font-family: 'GAME';
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: 'GAMECUBEN';
+    src: url(fonts/GameCube.ttf) format('truetype');;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+button {
+    border: none;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(12, 91, 209);
+    border-radius: 8px;
+    color: white;
+}
+button:hover {
+    background-color: rgb(60, 120, 209);
+}
+a{
+    text-decoration: none;
+    color: rgb(61, 129, 231);
+}
+
+a:hover {
+    color: red;
+}
+
+audio {
+    margin-top: 100px;
+    
+}
