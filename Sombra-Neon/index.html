@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f56e2d688f.js" crossorigin="anonymous"></script>
     <title>Sombra-Neon</title>
 </head>
 
@@ -31,11 +32,15 @@
                 <label for=""><a href="#">Registrarse</a></label>
             </div>
         </section>
-        <audio autoplay controls>
-
+        <audio id='player'>
             <source src="mp3/Likeawohwoh.mpeg" type="audio/mpeg">
         </audio>
-        
+        <section class="player">
+            <i class="fa-solid fa-play"   onclick="play();" id="iconPlay"></i>
+            <i class="fa-solid fa-volume-high"></i>
+        </section>
     </div>
 </body>
+
+<script src="app.js"></script>
 </html>

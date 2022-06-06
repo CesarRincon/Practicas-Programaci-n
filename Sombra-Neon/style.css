@@ -61,10 +61,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin: 0px; */
     margin-top: 150px;
-    
-    
 }
+
 .container h1 {
     color: white;
     margin-bottom: 50px;
@@ -158,6 +158,40 @@ a:hover {
 
 audio {
     margin-top: 100px;
+    
+}
+
+#iconPlay:hover {
+    cursor: pointer;
+}
+
+.player i {
+    color: red;
+    animation: neonButtom 3s ease infinite;
+}
+
+.player{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 20px;
+    right: 1px;
+}
+
+@keyframes neonButtom {
+    25% {
+       color: rgb(255, 124, 1);
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
 }
 
 @media (max-width: 600px) {
