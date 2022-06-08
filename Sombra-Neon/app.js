@@ -26,6 +26,10 @@ function classIconPlay() {
     iconPlay.classList.add('fa-solid fa-pause')
 }
 
+window.onload = () => {
+    play();
+}
+
 
 
 
