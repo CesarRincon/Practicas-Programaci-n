@@ -25,10 +25,7 @@ function classIconPlay() {
     iconPlay.classList.add('fa-solid fa-pause')
 }
 
-window.onload = () => {
-    toggleIcon();
-    return player.play();
-}
+
 
 
 
