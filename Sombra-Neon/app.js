@@ -1,6 +1,5 @@
 const player = document.getElementById('player')
 console.log(player);
-console.log(player.paused)
 //Funcion para darle play a la music
 function play() {
     if (player.paused) {
@@ -27,7 +26,8 @@ function classIconPlay() {
 }
 
 window.onload = () => {
-    play();
+    toggleIcon();
+    return player.play();
 }
 
 
