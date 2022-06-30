@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f56e2d688f.js" crossorigin="anonymous"></script>
+  <title></title>
+</head>
+
+<body>
+
+</body>
+  <audio id="player">
+    <source src="mp3/Discloure.mpeg" type='audio/mpeg'>
+    <source src="mp3/Likeawohwoh.mpeg" type='audio/mpeg'>
+   
+  </audio>
+  <div class="player-container">
+    <section class="image-container" id="image-container">
+      <div class="timer" id="timer">
+        &nbsp;
+      </div>
+      <input type="range" name="volume" id="volumen"
+      min="0" max="1" step="0.01" value="1">
+      <!-- <span id="vol-text"></span> -->
+      <img src="" alt="" id="image">
+      <progress min="0" max="100" value="0" id="progress"></progress>
+    </section>
+    <section class="controls-container">
+      <i class="fa-solid fa-backward-step" id="back-song"></i>
+      <i class="fa-solid fa-play" id="icon-play" onclick="play();"></i>
+      <i class="fa-solid fa-forward-step" id="next-song"></i>
+      <i class="" id="volume-up" onclick="VolumenUp();">+</i>
+      <i class="" id="volume-down" onclick="VolumenDown();">-</i>
+    </section> 
+  </div>
+ 
+<script src="app.js"></script>
+</html>
