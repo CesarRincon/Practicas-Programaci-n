@@ -82,6 +82,8 @@ const updateProgress = () => {
     }
 }
 
+console.log(player.firstElementChild.title)
+
 bar.addEventListener('click', adelantar);
 function adelantar(e) {
     const scrubTime = (e.offsetX / progress.offsetWidth) * player.duration;
@@ -102,6 +104,4 @@ function secondsToString(seconds) {
     var second = seconds % 60;
     second = (second < 10) ? '0' + second : second;
     return hour + minute + ':' + second;
-}
-
-
+};
